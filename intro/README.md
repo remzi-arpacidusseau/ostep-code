@@ -28,13 +28,13 @@ prompt> ./io
 One issue with mem.c is that address space randomization is usually on by
 default. To turn it off:
 
-## macOS
+### macOS
 From [stackoverflow](stackoverflow.com/questions/23897963/documented-way-to-disable-aslr-on-os-x)
 
 Just compile/link as follows:
     gcc -o mem mem.c -Wall -Wl,-no_pie
 
-## Linux
+### Linux
 
 From Giovanni Lagorio:
 
