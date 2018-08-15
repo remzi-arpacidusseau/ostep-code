@@ -11,7 +11,7 @@ CPU Virtualization Chapters:
 * Direct Execution
 * CPU Scheduling
 * Multi-level Feedback
-* Lottery Scheduling
+* [Lottery Scheduling](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/cpu-sched-lottery)
 * Multi-CPU Scheduling
 
 Memory Virtualization Chapters:
