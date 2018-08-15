@@ -1,6 +1,6 @@
 ## CPU API
 
-This code is basically that found in [Interlude: Process API](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf).
+Code from OSTEP chapter [Interlude: Process API](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf).
 
 To compile, just type:
 ```

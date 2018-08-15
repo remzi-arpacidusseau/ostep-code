@@ -1,8 +1,13 @@
 # Overview
 
-Type "make" to build programs.
+Code from OSTEP chapter [Introduction](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf).
 
-See primitive "Makefile" for details.
+To compile, just type:
+```
+prompt> make
+```
+
+See the highly primitive `Makefile` for details.
 
 Then, run them! Examples:
 
