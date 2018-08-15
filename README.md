@@ -1,10 +1,11 @@
 # ostep-code
 Code from various chapters in OSTEP (http://www.ostep.org)
 
-## Virtualization
-
 * [Introduction](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/intro)
 
+## Virtualization
+
+CPU Virtualization Chapters:
 * Processes
 * [Process API](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/cpu-api)
 * Direct Execution
@@ -13,6 +14,7 @@ Code from various chapters in OSTEP (http://www.ostep.org)
 * Lottery Scheduling
 * Multi-CPU Scheduling
 
+Memory Virtualization Chapters:
 * [Address Spaces](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/vm-intro)
 * Memory API
 * Address Translation
@@ -27,6 +29,7 @@ Code from various chapters in OSTEP (http://www.ostep.org)
 
 ## Concurrency
 
+Concurrency Chapters:
 * Concurrency and Threads
 * Threads API
 * Locks
@@ -38,6 +41,7 @@ Code from various chapters in OSTEP (http://www.ostep.org)
 
 ## Persistence
 
+Persistence Chapters:
 * I/O Devices
 * Hard Disk Drives
 * Redundant Disk Arrays (RAID)
@@ -48,7 +52,6 @@ Code from various chapters in OSTEP (http://www.ostep.org)
 * Log-structured File System (LFS)
 * Flash-based SSDs
 * Data Integrity and Protection
-
 * Distributed Systems
 * Network File System (NFS)
 * Andrew File System (AFS)
