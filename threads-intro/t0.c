@@ -1,8 +1,9 @@
-#include "common.h"
-#include "common_threads.h"
-#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <pthread.h>
+
+#include "common.h"
+#include "common_threads.h"
 
 void *mythread(void *arg) {
     printf("%s\n", (char *) arg);
