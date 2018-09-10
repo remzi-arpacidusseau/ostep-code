@@ -30,7 +30,7 @@ Memory Virtualization Chapters:
 ## Concurrency
 
 Concurrency Chapters:
-* Concurrency and Threads
+* [Concurrency and Threads](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-intro)
 * Threads API
 * Locks
 * Locked Data Structures
