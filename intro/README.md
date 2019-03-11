@@ -16,7 +16,7 @@ prompt> ./cpu A
 ```
 
 ```
-prompt> ./mem 1
+prompt> ./mem
 ```
 
 ```
