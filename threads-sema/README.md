@@ -1,4 +1,15 @@
 
+# Fork/Join
+
+Simple example of the fork/join (i.e., waiting for a child) problem
+using semaphores, found in `join.c`.
+
+Run `make` to build the code; run `join` to test it. Fun!
+
+
+
+
+
 # Dining Philosophers
 
 The dining philosophers example from the text is found herein, in a few

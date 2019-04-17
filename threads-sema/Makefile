@@ -1,9 +1,19 @@
+CC     := gcc
+CFLAGS := -Wall -Werror -I../include 
 
-FLAGS = -Wall -pthread -I../include
+SRCS   := dining_philosophers_deadlock.c dining_philosophers_deadlock_print.c dining_philosophers_no_deadlock.c dining_philosophers_no_deadlock_print.c join.c
 
-all:
-	gcc $(FLAGS) -o dining_philosophers_deadlock dining_philosophers_deadlock.c 
-	gcc $(FLAGS) -o dining_philosophers_deadlock_print dining_philosophers_deadlock_print.c 
-	gcc $(FLAGS) -o dining_philosophers_no_deadlock dining_philosophers_no_deadlock.c 
-	gcc $(FLAGS) -o dining_philosophers_no_deadlock_print dining_philosophers_no_deadlock_print.c
+OBJS   := ${SRCS:c=o}
+PROGS  := ${SRCS:.c=}
 
+.PHONY: all
+all: ${PROGS}
+
+${PROGS} : % : %.o Makefile
+	${CC} $< -o $@ -pthread
+
+clean:
+	rm -f ${PROGS} ${OBJS}
+
+%.o: %.c Makefile
+	${CC} ${CFLAGS} -c $<
