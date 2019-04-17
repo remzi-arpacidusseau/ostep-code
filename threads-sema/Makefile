@@ -1,7 +1,12 @@
 CC     := gcc
 CFLAGS := -Wall -Werror -I../include 
 
-SRCS   := dining_philosophers_deadlock.c dining_philosophers_deadlock_print.c dining_philosophers_no_deadlock.c dining_philosophers_no_deadlock_print.c join.c
+SRCS   := dining_philosophers_deadlock.c \
+	dining_philosophers_deadlock_print.c \
+	dining_philosophers_no_deadlock.c \
+	dining_philosophers_no_deadlock_print.c \
+	join.c \
+	zemaphore.c
 
 OBJS   := ${SRCS:c=o}
 PROGS  := ${SRCS:.c=}
