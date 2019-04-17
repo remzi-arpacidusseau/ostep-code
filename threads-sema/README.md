@@ -6,8 +6,23 @@ using semaphores, found in `join.c`.
 
 Run `make` to build the code; run `join` to test it. Fun!
 
+```sh
+prompt> make
+prompt> ./join
+```
 
 
+# Binary Semaphores (Locks)
+
+Simple example of semaphores as locks (binary semaphores).
+Code in `binary.c`.
+
+Run `make` to build the code; run `binary` to test it. Fun!
+
+```sh
+prompt> make
+prompt> ./binary
+```
 
 
 # Dining Philosophers
