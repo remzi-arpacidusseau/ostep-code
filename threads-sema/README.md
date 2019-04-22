@@ -43,6 +43,9 @@ prompt> ./producer_consumer 1 1000 1
 The output should print each produced item once, and show which
 consumer consumed each produced item.
 
+# Reader/Writer Locks
+
+Code in `rwlock.c`. Build via `make`, run via `rwlock`.
 
 # Dining Philosophers
 
@@ -55,3 +58,8 @@ different forms:
 
 Run `make` to build all of them with the highly primitive `Makefile`.
 
+
+# Zemaphores
+
+Code in `zemaphore.c`. We bet you can figure out the rest. This is just
+a small test of the Zemaphore with the fork/join problem.

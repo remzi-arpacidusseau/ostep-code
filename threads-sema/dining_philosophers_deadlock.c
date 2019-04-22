@@ -40,13 +40,14 @@ void eat() {
 
 void *philosopher(void *arg) {
     arg_t *args = (arg_t *) arg;
+    int p = args->thread_id;
 
     int i;
     for (i = 0; i < args->num_loops; i++) {
 	think();
-	get_forks(args->thread_id);
+	get_forks(p);
 	eat();
-	put_forks(args->thread_id);
+	put_forks(p);
     }
     return NULL;
 }
