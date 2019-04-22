@@ -7,6 +7,7 @@ SRCS   := dining_philosophers_deadlock.c \
 	dining_philosophers_no_deadlock_print.c \
 	join.c \
 	binary.c \
+	producer_consumer_works.c \
 	zemaphore.c
 
 OBJS   := ${SRCS:c=o}
