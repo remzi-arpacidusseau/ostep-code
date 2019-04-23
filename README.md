@@ -5,7 +5,6 @@ Code from various chapters in OSTEP (http://www.ostep.org)
 
 ## Virtualization
 
-
 CPU Virtualization Chapters:
 * Processes
 * [Process API](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/cpu-api)
