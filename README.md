@@ -31,11 +31,11 @@ Memory Virtualization Chapters:
 
 Concurrency Chapters:
 * [Concurrency and Threads](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-intro)
-* Threads API
+* [Threads API](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-api)
 * [Locks](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-locks)
 * Locked Data Structures
 * Condition Variables
-* Semaphores
+* [Semaphores](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-sema)
 * Concurrency Bugs
 * Event-based Concurrency
 
