@@ -34,7 +34,7 @@ Concurrency Chapters:
 * [Threads API](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-api)
 * [Locks](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-locks)
 * Locked Data Structures
-* Condition Variables
+* [Condition Variables](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-cv)
 * [Semaphores](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-sema)
 * Concurrency Bugs
 * Event-based Concurrency
