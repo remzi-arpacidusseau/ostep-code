@@ -6,6 +6,7 @@ SRCS   := join.c \
 	join_no_lock.c \
 	join_no_state_var.c \
 	join_modular.c \
+	pc_single_cv.c \
 	pc.c
 
 OBJS   := ${SRCS:c=o}
