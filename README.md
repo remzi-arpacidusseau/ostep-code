@@ -25,7 +25,7 @@ Memory Virtualization Chapters:
 * Advanced Page Tables
 * Swapping: Mechanisms
 * Swapping: Policies
-* Case Study: VAX/VMS
+* Complete VM Systems
 
 ## Concurrency
 
