@@ -3,6 +3,7 @@ CFLAGS := -Wall -Werror -I../include
 
 SRCS   := join.c \
 	join_spin.c \
+	join_no_lock.c \
 	join_modular.c
 
 OBJS   := ${SRCS:c=o}
