@@ -5,7 +5,8 @@ SRCS   := join.c \
 	join_spin.c \
 	join_no_lock.c \
 	join_no_state_var.c \
-	join_modular.c
+	join_modular.c \
+	pc.c
 
 OBJS   := ${SRCS:c=o}
 PROGS  := ${SRCS:.c=}
