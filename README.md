@@ -7,15 +7,15 @@ Code from various chapters in OSTEP (http://www.ostep.org)
 
 CPU Virtualization Chapters:
 * Processes
-* [Process API](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/cpu-api)
+* [Process API](cpu-api)
 * Direct Execution
 * CPU Scheduling
 * Multi-level Feedback
-* [Lottery Scheduling](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/cpu-sched-lottery)
+* [Lottery Scheduling](cpu-sched-lottery)
 * Multi-CPU Scheduling
 
 Memory Virtualization Chapters:
-* [Address Spaces](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/vm-intro)
+* [Address Spaces](vm-intro)
 * Memory API
 * Address Translation
 * Segmentation
@@ -30,12 +30,12 @@ Memory Virtualization Chapters:
 ## Concurrency
 
 Concurrency Chapters:
-* [Concurrency and Threads](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-intro)
-* [Threads API](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-api)
-* [Locks](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-locks)
+* [Concurrency and Threads](threads-intro)
+* [Threads API](threads-api)
+* [Locks](threads-locks)
 * Locked Data Structures
-* [Condition Variables](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-cv)
-* [Semaphores](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-sema)
+* [Condition Variables](threads-cv)
+* [Semaphores](threads-sema)
 * Concurrency Bugs
 * Event-based Concurrency
 
