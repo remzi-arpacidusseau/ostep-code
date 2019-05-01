@@ -1,7 +1,7 @@
 # ostep-code
 Code from various chapters in OSTEP (http://www.ostep.org)
 
-* [Introduction](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/intro)
+* [Introduction](intro)
 
 ## Virtualization
 
