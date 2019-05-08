@@ -7,7 +7,8 @@ ifeq ($(OS),Linux)
 	LIBS += -pthread
 endif
 
-SRCS   := atomicity.c 
+SRCS   := atomicity.c \
+	atomicity_fixed.c
 
 OBJS   := ${SRCS:c=o}
 PROGS  := ${SRCS:.c=}
