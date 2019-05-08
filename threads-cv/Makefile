@@ -1,5 +1,11 @@
 CC     := gcc
-CFLAGS := -Wall -Werror -I../include 
+CFLAGS := -Wall -Werror -I../include -pthread
+
+OS     := $(shell uname -s)
+LIBS   := 
+ifeq ($(OS),Linux)
+	LIBS += -pthread
+endif
 
 SRCS   := join.c \
 	join_spin.c \
@@ -16,7 +22,7 @@ PROGS  := ${SRCS:.c=}
 all: ${PROGS}
 
 ${PROGS} : % : %.o Makefile
-	${CC} $< -o $@ -pthread
+	${CC} $< -o $@ ${LIBS}
 
 clean:
 	rm -f ${PROGS} ${OBJS}
