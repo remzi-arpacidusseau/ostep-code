@@ -36,7 +36,7 @@ Concurrency Chapters:
 * Locked Data Structures
 * [Condition Variables](threads-cv)
 * [Semaphores](threads-sema)
-* Concurrency Bugs
+* [Concurrency Bugs](threads-bugs)
 * Event-based Concurrency
 
 ## Persistence
