@@ -6,6 +6,12 @@
 #include "common.h"
 #include "common_threads.h"
 
+#ifdef linux
+#include <semaphore.h>
+#elif __APPLE__
+#include "zemaphore.h"
+#endif
+
 sem_t mutex;
 volatile int counter = 0;
 
@@ -26,7 +32,7 @@ int main(int argc, char *argv[]) {
     Pthread_create(&c2, NULL, child, NULL);
     Pthread_join(c1, NULL);
     Pthread_join(c2, NULL);
-    printf("result: %d\n", counter);
+    printf("result: %d (should be 20000000)\n", counter);
     return 0;
 }
     

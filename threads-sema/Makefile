@@ -1,5 +1,11 @@
 CC     := gcc
-CFLAGS := -Wall -Werror -I../include 
+CFLAGS := -Wall -Werror -I../include -pthread
+
+OS     := $(shell uname -s)
+LIBS   := 
+ifeq ($(OS),Linux)
+	LIBS += -pthread
+endif
 
 SRCS   := dining_philosophers_deadlock.c \
 	dining_philosophers_deadlock_print.c \
@@ -9,7 +15,8 @@ SRCS   := dining_philosophers_deadlock.c \
 	binary.c \
 	producer_consumer_works.c \
 	rwlock.c \
-	zemaphore.c
+	zemaphore.c \
+	throttle.c 
 
 OBJS   := ${SRCS:c=o}
 PROGS  := ${SRCS:.c=}
@@ -18,7 +25,7 @@ PROGS  := ${SRCS:.c=}
 all: ${PROGS}
 
 ${PROGS} : % : %.o Makefile
-	${CC} $< -o $@ -pthread
+	${CC} $< -o $@ ${LIBS}
 
 clean:
 	rm -f ${PROGS} ${OBJS}

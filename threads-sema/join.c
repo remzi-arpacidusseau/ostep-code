@@ -6,10 +6,16 @@
 #include "common.h"
 #include "common_threads.h"
 
+#ifdef linux
+#include <semaphore.h>
+#elif __APPLE__
+#include "zemaphore.h"
+#endif
+
 sem_t s;
 
 void *child(void *arg) {
-    sleep(4);
+    sleep(2);
     printf("child\n");
     Sem_post(&s); // signal here: child is done
     return NULL;

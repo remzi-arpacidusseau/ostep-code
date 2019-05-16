@@ -5,6 +5,12 @@
 #include "common.h"
 #include "common_threads.h"
 
+#ifdef linux
+#include <semaphore.h>
+#elif __APPLE__
+#include "zemaphore.h"
+#endif
+
 typedef struct {
     int num_loops;
     int thread_id;
