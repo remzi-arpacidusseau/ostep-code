@@ -63,3 +63,11 @@ Run `make` to build all of them with the highly primitive `Makefile`.
 
 Code in `zemaphore.c`. We bet you can figure out the rest. This is just
 a small test of the Zemaphore with the fork/join problem.
+
+
+# Throttle
+
+Bonus code that shows how semaphores can be used to throttle how 
+many different threads run through a certain bit of code at a time.
+Code in `throttle.c`. 
+
