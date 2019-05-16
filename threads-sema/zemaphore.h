@@ -28,10 +28,12 @@ void Zem_post(Zem_t *z) {
     Mutex_unlock(&z->lock);
 }
 
+#ifdef __APPLE__
 typedef Zem_t sem_t;
 
 #define Sem_wait(s)    Zem_wait(s)
 #define Sem_post(s)    Zem_post(s)
 #define Sem_init(s, v) Zem_init(s, v)
+#endif
 
 #endif // __zemaphore_h__
