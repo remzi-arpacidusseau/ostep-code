@@ -14,6 +14,11 @@ Type `make` to build all examples.
 - `ordering.c`: Shows the ordering problem from the book chapter
 - `ordering_fixed.c`: Shows how to fix the problem with a condition variable
 
+## Deadlock
+
+- `deadlock.c`: Shows simple two-cycle deadlock
+- `deadlock_run.sh`: Script to run the above program many times, until you hit a deadlock and are convinced deadlock can occur
+
 
 
 

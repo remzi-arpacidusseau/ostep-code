@@ -10,7 +10,8 @@ endif
 SRCS   := atomicity.c \
 	atomicity_fixed.c \
 	ordering.c \
-	ordering_fixed.c
+	ordering_fixed.c \
+	deadlock.c
 
 OBJS   := ${SRCS:c=o}
 PROGS  := ${SRCS:.c=}
