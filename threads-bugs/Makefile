@@ -8,7 +8,8 @@ ifeq ($(OS),Linux)
 endif
 
 SRCS   := atomicity.c \
-	atomicity_fixed.c
+	atomicity_fixed.c \
+	ordering.c
 
 OBJS   := ${SRCS:c=o}
 PROGS  := ${SRCS:.c=}
