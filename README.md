@@ -52,7 +52,7 @@ Persistence Chapters:
 * Log-structured File System (LFS)
 * Flash-based SSDs
 * Data Integrity and Protection
-* Distributed Systems
+* [Distributed Systems](dist-intro)
 * Network File System (NFS)
 * Andrew File System (AFS)
 
