@@ -1,21 +1,21 @@
 # ostep-code
 Code from various chapters in OSTEP (http://www.ostep.org)
 
-* [Introduction](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/intro)
+* [Introduction](intro)
 
 ## Virtualization
 
 CPU Virtualization Chapters:
 * Processes
-* [Process API](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/cpu-api)
+* [Process API](cpu-api)
 * Direct Execution
 * CPU Scheduling
 * Multi-level Feedback
-* [Lottery Scheduling](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/cpu-sched-lottery)
+* [Lottery Scheduling](cpu-sched-lottery)
 * Multi-CPU Scheduling
 
 Memory Virtualization Chapters:
-* [Address Spaces](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/vm-intro)
+* [Address Spaces](vm-intro)
 * Memory API
 * Address Translation
 * Segmentation
@@ -25,18 +25,18 @@ Memory Virtualization Chapters:
 * Advanced Page Tables
 * Swapping: Mechanisms
 * Swapping: Policies
-* Case Study: VAX/VMS
+* Complete VM Systems
 
 ## Concurrency
 
 Concurrency Chapters:
-* [Concurrency and Threads](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-intro)
-* Threads API
-* [Locks](https://github.com/remzi-arpacidusseau/ostep-code/tree/master/threads-locks)
+* [Concurrency and Threads](threads-intro)
+* [Threads API](threads-api)
+* [Locks](threads-locks)
 * Locked Data Structures
-* Condition Variables
-* Semaphores
-* Concurrency Bugs
+* [Condition Variables](threads-cv)
+* [Semaphores](threads-sema)
+* [Concurrency Bugs](threads-bugs)
 * Event-based Concurrency
 
 ## Persistence
@@ -52,7 +52,7 @@ Persistence Chapters:
 * Log-structured File System (LFS)
 * Flash-based SSDs
 * Data Integrity and Protection
-* Distributed Systems
+* [Distributed Systems](dist-intro)
 * Network File System (NFS)
 * Andrew File System (AFS)
 
