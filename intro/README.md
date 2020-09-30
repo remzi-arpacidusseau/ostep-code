@@ -28,8 +28,7 @@ prompt> ./io
 ```
 
 
-## Details
-
+## important Details....
 One issue with mem.c is that address space randomization is usually on by
 default. To turn it off:
 
