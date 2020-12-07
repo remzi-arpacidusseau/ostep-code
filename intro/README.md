@@ -48,7 +48,7 @@ Under Linux you can disable ASLR, without using a debugger, in (at least)  two w
   bash, with which I can execute examples, like this:
   `setarch $(uname --machine) --addr-no-randomize /bin/bash`
 * Writing 0 into `/proc/sys/kernel/randomize_va_space`; you need to be
-  root to do this and this change has (a non-permament) effect on the
+  root to do this and this change has (a non-permanent) effect on the
   whole system, which is something you probably don't want. I use this
   one only inside VMs.
 
