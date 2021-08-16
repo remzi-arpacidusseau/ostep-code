@@ -65,8 +65,8 @@ int main(int argc, char *argv[]) {
         if (strcmp(argv[i], "pop") == 0) {
             if (p->n > 0)  // stack not empty
                 printf("%d\n", p->stack[--p->n]);
-        } else { 
-          if (sizeof(pstack_t) + (1 + p->n) * sizeof(int) <= file_size)  // stack not full
+        } else { // push
+          if (sizeof(pstack_t) + (1 + p->n) * sizeof(int) <= file_size) // stack not full
                 p->stack[p->n++] = atoi(argv[i]);
         }
     (void) close(fd);
