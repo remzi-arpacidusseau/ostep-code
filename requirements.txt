@@ -1,0 +1,5 @@
+future
+cryptography
+pyopenssl
+ndg-httpsclient
+pyasn1
