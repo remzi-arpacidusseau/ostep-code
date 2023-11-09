@@ -12,6 +12,6 @@ See the highly primitive `Makefile` for details.
 Then, run it:
 
 ```
-prompt> ./virtual-addresses
+prompt> ./va
 ```
 
