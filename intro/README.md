@@ -37,7 +37,7 @@ default. To turn it off:
 From [stackoverflow](http://stackoverflow.com/questions/23897963/documented-way-to-disable-aslr-on-os-x)
 
 Just compile/link as follows:
-    gcc -o mem mem.c -Wall -Wl,-no_pie
+    `gcc -o mem mem.c -Wall -Wl,-no-pie`
 
 ### Linux
 
