@@ -8,6 +8,7 @@ int gtickets = 0;
 
 struct node_t {
     int            tickets;
+    int            count;
     struct node_t *next;
 };
 
@@ -30,6 +31,15 @@ void print_list() {
 	curr = curr->next;
     }
     printf("\n");
+}
+
+void print_stats(int loops) {
+    struct node_t *curr = head;
+    printf("Stats:\n");
+    while (curr) {
+        printf("[%d]: %.3f %%\n", curr->tickets, (curr->count * 1. / loops) * 100);
+        curr = curr->next;
+    }
 }
 
 int
@@ -67,8 +77,10 @@ main(int argc, char *argv[])
 	// current is the winner: schedule it...
 	print_list();
 	printf("winner: %d %d\n\n", winner, current->tickets);
+    current->count += 1;
 
     }
+    print_stats(loops);
     return 0;
 }
 
